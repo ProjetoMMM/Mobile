@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'loginform',
+  appId: 'com.mudameumundo.com',
+  appName: 'Muda Meu Mundo',
   webDir: 'www',
   bundledWebRuntime: false
 };
