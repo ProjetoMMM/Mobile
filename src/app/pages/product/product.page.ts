@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-product',
+  templateUrl: './product.page.html',
+  styleUrls: ['./product.page.scss'],
 })
-export class HomePage {
+export class ProductPage implements OnInit {
 
   constructor(private route: Router) {}
 
@@ -26,4 +26,3 @@ export class HomePage {
     }
 
 }
-

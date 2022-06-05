@@ -27,6 +27,19 @@ const routes: Routes = [
     path: 'esquecisenha',
     loadChildren: () => import('./pages/esquecisenha/esquecisenha.module').then( m => m.EsquecisenhaPageModule)
   },
+  {
+    path: 'product',
+    loadChildren: () => import('./pages/product/product.module').then( m => m.ProductPageModule)
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./pages/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule)
+  },
+
 ];
 
 @NgModule({
