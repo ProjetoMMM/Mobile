@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       Aplicativo Muda Meu Mundo
@@ -6,20 +6,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>
-      Olá, agricultor! Seja bem-vindo
-    </ion-card-title>
-    <ion-card-subtitle>
-      Nesse aplicativo você poderá cadastrar os produtos disponíveis diariamente na sua produção! Veja abaixo como usar o aplicativo pra não perder nenhum detalhe!
-    </ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-card-title slot=""></ion-card-title>
-  </ion-card-content> 
+<ion-content>
+  <ion-card class="description" style="font-size:14px;">
+    Olá, agricultor!<br>Esse aplicativo foi criado para otimizar o seu trabalho na hora de repassar informações sobre seus produtos, e, assim, tornar suas vendas ainda mais efetivas! Veja aqui como usar seu app e aproveitá-lo da melhor forma!
   </ion-card>
-
+  <ion-card class="barra">
+    <img src="./img/menu.png" alt="imagem da barra de navegação">
+    
+  </ion-card>
 
   <ion-tabs>
     <ion-tab-bar slot="Perfil" (click)="navigateToUserPage()">
@@ -39,3 +33,9 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
+
+</ion-content>
+
+
+
+  

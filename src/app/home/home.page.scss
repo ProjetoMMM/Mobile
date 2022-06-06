@@ -1,24 +1,7 @@
 ion-content{
-
-  --ion-background-color:#fff;
+  --background: #ffff url('../img2/bg.png') no-repeat center center / cover !important;
   font-family: Arial, Helvetica, sans-serif;
-
+  
 }
 
-ion-card{
-  margin-bottom: 160%;
-  background: transparent;
-  box-shadow: none;
-  text-align: center;
 
-  ion-card-title{
-      color:#242020;
-      font-size: 30px;
-  }
-
-  ion-card-subtitle{
-      color:rgb(17, 153, 17);
-      font-size: 14px;
-      font-weight: 400; 
-  }
-}

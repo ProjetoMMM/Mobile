@@ -9,40 +9,45 @@
 </ion-header>
 
 <ion-content>
-
-  <div class="background-pic">
-     <div class="background-filter">
        
 
        <ion-card>
          <ion-card-header>
            <ion-card-title>
-            Olá!
+            Cadastre os alimentos disponíveis na sua produção com praticidade!
            </ion-card-title>
            <ion-card-subtitle>
-            Aqui você pode cadastrar os alimentos disponíveis na sua região! Escolha o alimento, a quantidade e selecione a data!
+             Instruções:<br>1)Verifique se ná lista de produtos há o produto que você deseja enviar<br>2) Caso o alimento não esteja na lista, digite o nome dele no primeiro campo<br>3)Digite a quantidade do alimento<br>3) Digite a data de disponibilidade<br>4) Envie!
            </ion-card-subtitle>
          </ion-card-header>
          <ion-card-content>
           
-            <ion-item>
-              <ion-label>Produto</ion-label>
+            <ion-item class="lista">
+              <ion-label>Tipo</ion-label>
               <ion-select placeholder="selecione">
-                <ion-select-option value="tomate">Tomate</ion-select-option>
+                <ion-select-option value="abobrinha">Abobrinha</ion-select-option>
                 <ion-select-option value="alface">Alface</ion-select-option>
+                <ion-select-option value="banana prata">Banana prata</ion-select-option>
+                <ion-select-option value="batata doce">Batata doce</ion-select-option>
+                <ion-select-option value="batata inglesa">Batata inglesa</ion-select-option>
                 <ion-select-option value="cebola">Cebola</ion-select-option>
+                <ion-select-option value="cenoura">Cenoura</ion-select-option>
+                <ion-select-option value="couve">Couve</ion-select-option>
+                <ion-select-option value="limão">Limão</ion-select-option>
+                <ion-select-option value="maçã">Maçã</ion-select-option>
+                <ion-select-option value="tomate">Tomate</ion-select-option>
               </ion-select>
             </ion-item>   
           
-            <p>Insira abaixo o produto disponível</p>
+            <p style="margin-top: 10px;">Insira abaixo o produto disponível</p>
             <ion-item>
              <ion-input placeholder="Exemplo: Tomate"></ion-input>
             </ion-item>
-            <p>Insira abaixo a quantidade disponível com o peso</p>
+            <p style="margin-top: 10px;">Insira abaixo a quantidade disponível</p>
             <ion-item>
               <ion-input placeholder="Exemplo: 30 kilogramas"></ion-input>
             </ion-item>
-            <p>Insira abaixo a data da disponibilidade</p>
+            <p style="margin-top: 10px;">Insira abaixo a data da disponibilidade</p>
             <ion-item>
               <ion-input placeholder="Exemplo: 07/06/2022"></ion-input>
             </ion-item>
@@ -51,27 +56,25 @@
             </div>
          </ion-card-content>
        </ion-card>
-     </div>
-  </div>
 
+      
+
+       <ion-tabs >
+        <ion-tab-bar slot="Perfil" (click)="navigateToUserPage()">
+          <ion-tab-button tab="perfil">
+            <ion-icon name="person-circle"></ion-icon>
+            <ion-label>Perfil</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="Produtos" (click)="navigateToProductPage()">
+            <ion-icon name="leaf-outline"></ion-icon>
+            <ion-label>Produtos</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="home" (click)="navigateToHomePage()">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>Como usar?</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
 </ion-content>
-
-
-<ion-tabs>
-  <ion-tab-bar slot="Perfil" (click)="navigateToUserPage()">
-    <ion-tab-button tab="perfil">
-      <ion-icon name="person-circle"></ion-icon>
-      <ion-label>Perfil</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="Produtos" (click)="navigateToProductPage()">
-      <ion-icon name="leaf-outline"></ion-icon>
-      <ion-label>Produtos</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="home" (click)="navigateToHomePage()">
-      <ion-icon name="information-circle"></ion-icon>
-      <ion-label>Como usar?</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
