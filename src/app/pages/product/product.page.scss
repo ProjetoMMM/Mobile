@@ -60,7 +60,14 @@ ion-card{
         }
 
     }
-  
+    
+    ion-tab{
+        margin-bottom: 0px;
+        position:static;
+        box-shadow:#242020
+        
+        
+    }
     .bottom-section{
     margin-top: 15px;
     display: flex;
@@ -78,9 +85,7 @@ ion-card{
     }
 
     }
+  
 
 }
 
-ion-tab{
-    box-shadow:#242020
-}
