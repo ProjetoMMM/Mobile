@@ -30,6 +30,29 @@ ion-card{
             --inner-border-width:0;
             --highlight-color-focused:none;
             margin-bottom: 15px;
+            position: center;
+
+            ion-label{
+                width:257px;
+                height: 42px;
+                border-radius: 15px;
+                border:  1px solid #198645;
+                font-size: 14px;
+                font-weight: 300;
+                color:#555B5B;
+                --padding-start:30px;
+            }
+
+            ion-select{
+                width:257px;
+                height: 42px;
+                border-radius: 15px;
+                border:  1px solid #198645;
+                font-size: 14px;
+                font-weight: 300;
+                color:#555B5B;
+                --padding-start:30px;
+            }
 
             ion-input{
                 width:257px;
@@ -45,7 +68,14 @@ ion-card{
         }
 
     }
-  
+    
+    ion-tab{
+        margin-bottom: 0px;
+        position:static;
+        box-shadow:#242020
+        
+        
+    }
     .bottom-section{
     margin-top: 50px;
     display: flex;
@@ -70,9 +100,7 @@ ion-card{
         }
     }
     }
+  
 
 }
 
-ion-tab{
-    box-shadow:#242020
-}
