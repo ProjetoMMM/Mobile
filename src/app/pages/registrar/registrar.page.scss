@@ -33,15 +33,16 @@ ion-content{
 }
 
 ion-card{
-    margin-top: 130px;
+    margin-top: 30px;
     background: transparent;
     box-shadow: none;
     text-align: center;
 
     ion-card-title{
         color:#242020;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
+        top:0;
     }
 
     ion-card-subtitle{
