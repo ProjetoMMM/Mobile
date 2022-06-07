@@ -31,16 +31,25 @@ ion-card{
  font-size: 16px;
      color: #D2EDDD;
      font-weight: 500;
+     position: relative;
+     
+}
+     
 
  img{
      margin-top: 110px;
-     height: 7rem;
-     width: 7.2rem;
+     max-width:200px;
+     max-height:200px;
+     width: auto;
+     height: auto;
+ 
  }
  ion-card-title{
-     font-size: 20px;
+     font-size: 18px;
      color: #D2EDDD;
      font-weight: 500;
+   
+    
 
  }
 
@@ -59,7 +68,7 @@ ion-card{
       font-size: 20px;
   }
  }
-}
+
 
 
     
