@@ -1,5 +1,5 @@
 ion-content{
-    --ion-background-color:#fff;
+    --ion-background-color:rgb(32, 58, 37);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,7 +7,7 @@ ion-content{
   height: 100vh;
   width: 100%;
   display: flex;
-  background-color: #275C3C;
+  background: url('../../img2/organicos-importancia.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -15,11 +15,22 @@ ion-content{
   justify-content: center;
 
 }
+.background-filter{
+    height: 100%;
+    width: 100%;
+    background: rgba(20, 53, 33, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 ion-card{
  text-align: center;
  background: transparent;
  box-shadow: none;
+ font-size: 16px;
+     color: #D2EDDD;
+     font-weight: 500;
 
  img{
      margin-top: 110px;
@@ -50,13 +61,5 @@ ion-card{
  }
 }
 
-@media screen and (min-width:500px){
-    .background-filter{
-        height: 100%;
-        width: 100%;
-        background: rgba(39,92,60,0.9);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+
+    
